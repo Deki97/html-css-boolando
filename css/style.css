@@ -7,9 +7,85 @@
 
 /* COMMON */
 .container {
-    width: 60%;
+    width: 50%;
     margin: auto;
+    text-align: center;
 }
 
+body {
+    font-family: Arial;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.item {
+    width: 32%;
+    display: inline-block;
+}
+
+.item-image-container {
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: white;
+    padding: 4px 8px;
+}
+
+.window {
+    font-size: 8px;
+    color: white;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+.window.sale {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    background-color: red;
+}
+
+.window.sustainable {
+    position: absolute;
+    background-color: green;
+    bottom: 15px;
+    left: 30px;
+}
+
+.item-text-container {
+    text-align: left;
+}
+
+.item-text-container .item-brand {
+    font-size: 8px;  
+}
+
+.item-text-container .item-name {
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.item-text-container .item-price {
+    font-size: 9px;
+    color: red;
+    font-weight: bold;
+}
+
+.item-text-container .item-price .item-old-price{
+    text-decoration: line-through;
+    color: black;
+    font-weight: lighter;
+}
 
 
