@@ -19,7 +19,10 @@ body {
 img {
     width: 100%;
 }
+/* END COMMON */
 
+
+/* ROW */
 .row {
     width: 100%;
     margin: 20px 0;
@@ -30,10 +33,13 @@ img {
     display: inline-block;
 }
 
+
+/* TOP IMAGE CONTAINER */
 .item-image-container {
     position: relative;
 }
 
+/* HOVER BEHAVIOR */
 .imgdefault {
     display: block;
 }
@@ -49,6 +55,7 @@ img {
 .item-image-container:hover .imghover {
     display: block;
 }
+/* END HOVER BEHAVIOR */
 
 .heart {
     position: absolute;
@@ -78,7 +85,10 @@ img {
     bottom: 15px;
     left: 40px;
 }
+/* END TOP IMAGE CONTAINER */
 
+
+/* BOTTOM TEXT CONTAINER */
 .item-text-container {
     text-align: left;
     margin-top: 5px;
@@ -105,5 +115,6 @@ img {
     font-weight: lighter;
 }
 
+/* END */
 
 
