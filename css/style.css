@@ -66,6 +66,8 @@ img {
 }
 
 .window {
+    position: absolute;
+    bottom: 15px;
     font-size: 10px;
     color: white;
     padding: 4px 7px;
@@ -73,17 +75,18 @@ img {
 }
 
 .window.sale {
-    position: absolute;
-    bottom: 15px;
     left: 0;
     background-color: red;
 }
 
 .window.sustainable {
-    position: absolute;
     background-color: green;
-    bottom: 15px;
     left: 40px;
+}
+
+.window.sustainable-latest {
+    background-color: green;
+    left: 0;
 }
 /* END TOP IMAGE CONTAINER */
 
