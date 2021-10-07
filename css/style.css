@@ -34,6 +34,22 @@ img {
     position: relative;
 }
 
+.imgdefault {
+    display: block;
+}
+
+.imghover {
+    display: none;
+}
+
+.item-image-container:hover .imgdefault {
+    display: none;
+}
+
+.item-image-container:hover .imghover {
+    display: block;
+}
+
 .heart {
     position: absolute;
     top: 15px;
@@ -43,9 +59,9 @@ img {
 }
 
 .window {
-    font-size: 8px;
+    font-size: 10px;
     color: white;
-    padding: 2px 4px;
+    padding: 4px 7px;
     font-weight: bold;
 }
 
@@ -60,24 +76,25 @@ img {
     position: absolute;
     background-color: green;
     bottom: 15px;
-    left: 30px;
+    left: 40px;
 }
 
 .item-text-container {
     text-align: left;
+    margin-top: 5px;
 }
 
 .item-text-container .item-brand {
-    font-size: 8px;  
+    font-size: 10px;  
 }
 
 .item-text-container .item-name {
-    font-size: 9px;
+    font-size: 10px;
     font-weight: bold;
 }
 
 .item-text-container .item-price {
-    font-size: 9px;
+    font-size: 10px;
     color: red;
     font-weight: bold;
 }
@@ -87,5 +104,6 @@ img {
     color: black;
     font-weight: lighter;
 }
+
 
 
