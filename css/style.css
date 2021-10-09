@@ -5,11 +5,12 @@
     box-sizing: border-box;
 }
 
-/* COMMON */
+/* CONTAINER */
 .container {
-    width: 50%;
+    width: 80%;
     margin: auto;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 body {
@@ -19,105 +20,106 @@ body {
 img {
     width: 100%;
 }
-/* END COMMON */
 
 
 /* ROW */
 .row {
     width: 100%;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
+/* SINGLE ITEM */
 .item {
     width: 32%;
     display: inline-block;
+    padding: 5px;
 }
-
 
 /* TOP IMAGE CONTAINER */
-.item-image-container {
+.top-image-container {
     position: relative;
 }
-
-/* HOVER BEHAVIOR */
-.imgdefault {
-    display: block;
-}
-
-.imghover {
-    display: none;
-}
-
-.item-image-container:hover .imgdefault {
-    display: none;
-}
-
-.item-image-container:hover .imghover {
-    display: block;
-}
-/* END HOVER BEHAVIOR */
 
 .heart {
     position: absolute;
     top: 15px;
     right: 0;
+    font-size: 25px;
     background-color: white;
-    padding: 4px 8px;
+    padding: 7px 15px;
 }
 
-.window {
+.tags {
     position: absolute;
-    bottom: 15px;
-    font-size: 10px;
-    color: white;
-    padding: 4px 7px;
-    font-weight: bold;
+    left: 0;
+    bottom: 20px;
 }
 
-.window.sale {
-    left: 0;
+.tag {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 7px;
+}
+
+.tag.sale {
     background-color: red;
 }
 
-.window.sustainable {
-    background-color: green;
-    left: 40px;
+.tag.type {
+    background-color: #00875a;
 }
 
-.window.sustainable-latest {
-    background-color: green;
-    left: 0;
+
+/* HOVER */
+.top-image-container .imgdefault {
+    display: block;
 }
+
+.top-image-container .imghover {
+    display: none;
+}
+
+.top-image-container:hover .imgdefault {
+    display: none;
+}
+
+.top-image-container:hover .imghover {
+    display: block;
+}
+/* END HOVER */
+
 /* END TOP IMAGE CONTAINER */
 
 
 /* BOTTOM TEXT CONTAINER */
-.item-text-container {
+.bottom-text-container {
     text-align: left;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
-.item-text-container .item-brand {
-    font-size: 10px;  
+.bottom-text-container .brand {
+    font-size: 12px;
 }
 
-.item-text-container .item-name {
-    font-size: 10px;
+.bottom-text-container .name {
+    font-size: 14px;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
-.item-text-container .item-price {
-    font-size: 10px;
+.bottom-text-container .price {
+    font-size: 12px;
+}
+
+.bottom-text-container .price .new-price {
+    font-weight: bold;
     color: red;
-    font-weight: bold;
 }
 
-.item-text-container .item-price .item-old-price{
+.bottom-text-container .price .old-price {
     text-decoration: line-through;
-    color: black;
-    font-weight: lighter;
 }
+/* END BOTTOM TEXT CONTAINER */
 
 /* END */
-
-
